@@ -113,4 +113,6 @@ const latestPosts = computed(() => {
 const post = computed(() => {
   return posts.value.find((p) => p.slug === props.slug);
 });
+
+console.warn("THIS IS BLOG MOBILE POST", posts, props.slug);
 </script>
