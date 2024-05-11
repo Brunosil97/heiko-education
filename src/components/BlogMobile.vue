@@ -1,4 +1,3 @@
-<!-- eslint-disable vue/no-v-html -->
 <template>
   <v-container fluid>
     <ConfirmDialog />
@@ -48,7 +47,7 @@
     </v-row>
     <v-row>
       <v-col cols="12">
-        <div v-html="post.content"></div>
+        <div v-dompurify-html="post.content"></div>
       </v-col>
     </v-row>
     <v-row>
